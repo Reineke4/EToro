@@ -1,0 +1,8 @@
+.vs/
+EToro.AutomationFramework.WEB/obj/
+EToro.AutomationFramework.WEB/bin/
+EToro.TestProject.AutotestCommon/obj/
+EToro.TestProject.AutotestCommon/bin/
+EToro.TestProject.WEB/obj/
+EToro.TestProject.WEB/bin/
+packages/
