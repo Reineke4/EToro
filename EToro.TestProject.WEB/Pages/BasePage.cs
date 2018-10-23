@@ -37,10 +37,10 @@ namespace EToro.TestProject.WEB.Pages
             }
         }
 
-        public void WaitForElementToBeDisplayed(string xPath)
+        public void WaitForElementToBeClickable(string xPath)
         {
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xPath)));
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(xPath)));
         }
 
         protected List<IWebElement> FindElementsByXPath(string xPath)

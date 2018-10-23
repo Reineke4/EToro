@@ -35,6 +35,7 @@ namespace EToro.AutomationFramework.WEB.Driver
             {
                 case "CHROME":
                     ChromeOptions options = new ChromeOptions();
+                    options.AddArguments("test-type");
                     options.AddArguments("--start-maximized");
                     var driver = new ChromeDriver(options);
                     driver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(30);

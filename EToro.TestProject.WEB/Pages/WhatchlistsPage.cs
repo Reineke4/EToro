@@ -9,7 +9,6 @@ namespace EToro.TestProject.WEB.Pages
 {
     class WhatchlistsPage: BasePage
     {
-        private const string PopUp = "//div[@class='inmplayer-popover-title'][text()='Welcome to eToro']";
         private const string ClosePopUpButton = "//div[@class='inmplayer-popover-close-button']";
         private const string VisibleCurrensies = "//watchlist-item/div/div/div/span[1]";
 
@@ -19,8 +18,8 @@ namespace EToro.TestProject.WEB.Pages
 
         public void ClosePopUp()
         {
-            WaitForElementToBeDisplayed(PopUp);
-            IsElementDisplayed(PopUp);
+            WaitForElementToBeClickable(ClosePopUpButton);
+            IsElementDisplayed(ClosePopUpButton);
             FindElementByXPathAndClick(ClosePopUpButton);
         }
 
